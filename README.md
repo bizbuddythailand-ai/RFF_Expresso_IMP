@@ -16,44 +16,9 @@ Buddy Loop ทำงานเป็น 2 เลนพร้อมกัน โ�
 
 ---
 
-## 1. เปิดใช้งานเร็วที่สุด
-
-**ไม่ต้องติดตั้งอะไร** เป็น HTML + JavaScript ล้วน
-
-- ดับเบิลคลิก `index.html` เพื่อเปิดในเบราว์เซอร์ (Chrome, Edge, Safari)
-- หรือรันเซิร์ฟเวอร์ในเครื่อง (แนะนำ เพราะฟีเจอร์ AI ต้องเปิดผ่าน http/https)
-  ```bash
-  cd buddy-loop
-  python3 -m http.server 8080
-  # เปิด http://localhost:8080
-  ```
 
 ข้อมูลทั้งหมดเก็บใน `localStorage` ของเบราว์เซอร์ ปิดแล้วเปิดใหม่ยังอยู่ กด "เริ่มเดโมใหม่" ในแท็บ **ข้อมูล & AI** เพื่อล้าง
 
-## 2. ขึ้น GitHub Pages (ได้ลิงก์สาธารณะไว้ส่งลูกค้า)
-
-### วิธี A: อัปโหลดผ่านเว็บ (ไม่ต้องใช้ command line)
-1. เข้า https://github.com/new → ตั้งชื่อ repo เช่น `buddy-loop` → เลือก **Public** → กด **Create repository**
-2. ในหน้า repo กด **uploading an existing file** → ลากไฟล์และโฟลเดอร์ทั้งหมดในโฟลเดอร์นี้ (`index.html`, `css/`, `js/`, `data/`, `docs/`, `README.md`, `.nojekyll`) ลงไป → กด **Commit changes**
-3. ไปที่ **Settings → Pages**
-4. ตรง **Build and deployment → Source** เลือก **Deploy from a branch**
-5. Branch เลือก `main` และโฟลเดอร์ `/ (root)` → กด **Save**
-6. รอ 1–2 นาที ลิงก์จะขึ้นด้านบนหน้า Pages ในรูปแบบ `https://<ชื่อผู้ใช้>.github.io/buddy-loop/`
-
-### วิธี B: ใช้ git
-```bash
-cd buddy-loop
-git init
-git add .
-git commit -m "Buddy Loop demo v2"
-git branch -M main
-git remote add origin https://github.com/<ชื่อผู้ใช้>/buddy-loop.git
-git push -u origin main
-```
-จากนั้นทำขั้น 3–6 ของวิธี A
-
-> ถ้าเป็น repo แบบ Private ต้องใช้แพ็กเกจ GitHub ที่รองรับ Pages สำหรับ private repo
-> อย่าใส่ API key ลงในไฟล์ใด ๆ ที่ขึ้น GitHub
 
 ## 3. วิธีเดโม (สรุป)
 
