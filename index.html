@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Buddy Loop</title>
+<meta name="description" content="Buddy Loop — AI ที่ดูแลสินค้าเดิมและสร้างสินค้าใหม่ให้แบรนด์ retail แบบอัตโนมัติ (เดโมจาก Bizbuddy)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in gutter">
+    <div class="logo">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="12" fill="none" stroke="var(--line)" stroke-width="4"/>
+        <path d="M16 4 A12 12 0 0 1 28 16" fill="none" stroke="var(--grow)" stroke-width="4" stroke-linecap="round"/>
+        <path d="M28 16 A12 12 0 0 1 6.4 23.2" fill="none" stroke="var(--run)" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="16" cy="16" r="3.5" fill="var(--learn)"/>
+      </svg>
+      <div><b>Buddy Loop</b><span id="brandLine">by Bizbuddy</span></div>
+    </div>
+    <div class="clock" aria-live="polite"><span>วันที่จำลอง</span><strong id="clockDate">–</strong><span id="clockCamp"></span></div>
+    <div class="runbar" role="group" aria-label="รันระบบ">
+      <button class="btn primary" id="run1" type="button">รัน 1 วัน</button>
+      <button class="btn" id="run7" type="button">7 วัน</button>
+      <button class="btn" id="run30" type="button">30 วัน</button>
+      <button class="btn" id="autoplay" type="button" aria-pressed="false">Autopilot</button>
+    </div>
+  </div>
+  <nav class="tabs gutter" id="tabs" aria-label="เมนู"></nav>
+</header>
+
+<main class="gutter" id="view" tabindex="-1"></main>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/sample-data.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

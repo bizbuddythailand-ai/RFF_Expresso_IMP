@@ -1,0 +1,4 @@
+sku,name,category,price,cost,stock,daily_sales,lead_time_days,moq,age_days,rating,oem,roas_shopee,roas_tiktok,roas_lazada,ad_shopee,ad_tiktok,ad_lazada
+MY-001,กันแดดสูตรน้ำ 50ml,กันแดด,390,95,1200,40,21,500,300,4.6,OEM A,6,8,4,600,800,250
+MY-002,เซรั่มวิตามินซี 30ml,เซรั่ม,590,140,300,25,30,300,200,4.4,OEM B,5,6,4,500,600,200
+MY-003,มาสก์โคลน 100g,มาสก์,350,80,2000,8,30,300,240,4.2,OEM B,3,3.5,2,200,200,80
